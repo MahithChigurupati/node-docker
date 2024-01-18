@@ -9,11 +9,11 @@ services:
 
   node-app:
     build: .
+    image: mahithchigurupati/node-docker
     environment:
       - PORT=3000
     depends_on:
       - mongo
-      - redis
 
   mongo:
     image: mongo
